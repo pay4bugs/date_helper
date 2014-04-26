@@ -24,6 +24,7 @@ xmas = Date.parse("2013-12-25")
 hksar_establishment_day = Date.parse("2014-07-01")
 
 Date.months_between(xmas,hksar_establishment_day)
+ => [Sun, 01 Dec 2013, Wed, 01 Jan 2014, Sat, 01 Feb 2014, Sat, 01 Mar 2014, Tue, 01 Apr 2014, Thu, 01 May 2014, Sun, 01 Jun 2014, Tue, 01 Jul 2014]
 ```
 ## Contributing
 
