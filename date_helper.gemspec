@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = DateHelper::VERSION
   spec.authors       = ["Larry Salibra"]
   spec.email         = ["larry@pay4bugs.com"]
-  spec.description   = "Adds months_between method to the Date class."
+  spec.description   = "Adds some useful methods to the Date class."
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/pay4bugs/date_helper"
   spec.license       = "MIT"

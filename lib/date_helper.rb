@@ -1,7 +1,7 @@
 require 'date'
 
 module DateHelper
-  VERSION = "1.0.0"
+  VERSION = "1.1.0"
 end
 
 class Date
@@ -24,4 +24,21 @@ class Date
 
     months << end_date
   end
+  
+  
+  def self.utc_times(dates)
+    result = Array.new
+    for date in dates
+      result << date.to_utc_time
+    end
+    result
+  end
+  
+  
+  # return a Time object at 00:00:00 UTC on the given Date
+  def to_utc_time
+    Time.utc(self.year,self.month,self.day)
+  end
+  
+  
 end

@@ -85,5 +85,11 @@ describe DateHelper  do
       end
     end
   end
+  
+  
+  it "to_utc_time should convert date to utc time" do 
+    expect(Date.parse("2014-01-01").to_utc_time).to be == Time.iso8601("2014-01-01T00:00:00Z")
+    expect(Date.parse("2014-01-01").to_time).to_not be == Time.iso8601("2014-01-01T00:00:00Z")
+  end
 
 end
